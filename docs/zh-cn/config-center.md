@@ -112,6 +112,7 @@ return [
                     'tenant' => 'tenant', // corresponding with service.namespaceId
                     'data_id' => 'hyperf-service-config',
                     'group' => 'DEFAULT_GROUP',
+                    'type' => 'yml'      //这里一定要注意格式与nacos的配置格式一致，目前只支持json，yml，yaml 不支持Properties格式（需要拿到数据手动处理成数组）
                 ],
                 'nacos_config.data' => [
                     'data_id' => 'hyperf-service-config-yml',
